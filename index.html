@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuration Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="flex flex-col h-screen">
+        <!-- Windows Application Top Bar -->
+        <div class="bg-white p-2 flex items-center justify-between border-b border-gray-300">
+            <div class="text-sm">Microsoft Configuration Manager (Connected to LLI, LinkedIn Learning - LLI-001)</div>
+            <div class="text-sm">&#9633; &#9472; &#10005;</div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="flex items-center">
+            <div class="bg-[#1c4490] w-[75px] h-full flex items-center justify-center text-white text-sm">▼</div>
+            <div class="bg-[#f8fcfd] p-1 flex-1">
+                <input type="text" placeholder="Search..." class="w-full bg-transparent border-0 text-sm">
+            </div>
+        </div>
+
+        <!-- Header with Icons and Aligned Menu -->
+        <header class="bg-transparent p-4 flex items-center space-x-2">
+            <button class="bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center border-r border-[#dee2e7] text-xs">
+                <i class="ph ph-files"></i>All Objects
+            </button>
+            <button class="bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center border-r border-[#dee2e7] text-xs">
+                <i class="ph ph-magnifying-glass"></i>Saved Searches
+            </button>
+            <button class="bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center border-r border-[#dee2e7] text-xs">
+                <i class="ph ph-gear"></i>Search Settings
+            </button>
+            <button class="bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center border-r border-[#dee2e7] text-xs">
+                <i class="ph ph-bookmark"></i>Save Current Search
+            </button>
+            <button class="bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center border-r border-[#dee2e7] text-xs">
+                <i class="ph ph-bookmarks"></i>Save Search As
+            </button>
+            <button class="bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center border-r border-[#dee2e7] text-xs">
+                <i class="ph ph-x"></i>Close
+            </button>
+            <button class="bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center text-xs">
+                <i class="ph ph-target"></i>Active Search
+            </button>
+        </header>
+
+        <div class="flex flex-1 overflow-hidden">
+            <aside class="bg-[#e6edf3] w-64 p-4 overflow-y-auto h-full">
+                <div class="font-medium">Overview</div>
+                <div class="pl-4 space-y-1 text-xs">
+                    <div>Updates and Servicing</div>
+                    <div>Hierarchy Configuration</div>
+                    <div>Discovery Methods</div>
+                    <div>Boundary Groups</div>
+                    <div>Exchange Server Connectors</div>
+                    <div>Database Replication</div>
+                    <div>File Replication</div>
+                    <div>Active Directory Forests</div>
+                    <div>Cloud Services</div>
+                    <div>Site Configuration</div>
+                    <div>Servers and Site System Roles</div>
+                    <div>Client Settings</div>
+                    <div>Security</div>
+                    <div>Distribution Points</div>
+                    <div>Distribution Point Groups</div>
+                    <div>Migration</div>
+                    <div>Source Hierarchy</div>
+                    <div>Migration Jobs</div>
+                    <div>Distribution Point Migration</div>
+                    <div>Management Insights</div>
+                    <div>All Insights</div>
+                    <div>Operating System Deployment</div>
+                </div>
+                <div class="border-t border-b border-[#f2f6fc] mt-4 pt-2">
+                    <div class="text-xs">Assets and Compliance</div>
+                    <div class="text-xs">Software Library</div>
+                    <div class="text-xs">Monitoring</div>
+                    <div class="text-xs">Administration</div>
+                    <div class="text-xs">Community</div>
+                </div>
+            </aside>
+
+            <main class="flex-1 p-6 bg-[#f5f9ff] overflow-y-auto">
+                <h1 class="text-2xl font-semibold mb-4">Administration</h1>
+                <section class="mb-6">
+                    <h2 class="text-lg font-medium mb-2">Navigation Index</h2>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <p><strong class="text-[#88afcf]">Updates and Servicing:</strong> Updates and Servicing will let you install recent updates as they become available.</p>
+                            <p><strong class="text-[#88afcf]">Cloud Services:</strong> Manage subscriptions to cloud services in your hierarchy.</p>
+                        </div>
+                        <div>
+                            <p><strong class="text-[#88afcf]">Hierarchy Configuration:</strong> Manage boundaries, site-to-site communication, discovery methods, Active Directory forest and Exchange Server connection settings.</p>
+                            <p><strong class="text-[#88afcf]">Management Insights:</strong> Better understand your environment and take action, based on analysis of data from the site database.</p>
+                        </div>
+                    </div>
+                </section>
+                <div class="border border-[#f8fcfd] p-2 text-sm">• Recent Alerts (0) - Last updated: 4/28/2024 10:59:09 AM.</div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
