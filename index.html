@@ -17,42 +17,42 @@
     <div class="flex flex-col h-screen">
         <!-- Windows Application Top Bar -->
         <div class="bg-white p-2 flex items-center justify-between border-b border-gray-300">
-            <div class="text-sm">Microsoft Configuration Manager (Connected to LLI, LinkedIn Learning - LLI-001)</div>
+            <div class="text-sm">Microsoft Configuration Manager (Connected to DAJ, DAVID JENNER - DAJ-001)</div>
             <div class="text-sm">&#9633; &#9472; &#10005;</div>
-        </div>
-
-        <!-- Search Bar -->
-        <div class="flex items-center">
-            <div class="bg-[#1c4490] w-[75px] h-full flex items-center justify-center text-white text-sm">▼</div>
-            <div class="bg-[#f8fcfd] p-1 flex-1">
-                <input type="text" placeholder="Search..." class="w-full bg-transparent border-0 text-sm">
-            </div>
         </div>
 
         <!-- Header with Icons and Aligned Menu -->
         <header class="bg-transparent p-4 flex items-center space-x-2">
             <button class="bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center border-r border-[#dee2e7] text-xs">
-                <i class="ph ph-files"></i>All Objects
+                <i class="ph ph-files text-4xl"></i>All Objects
             </button>
             <button class="bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center border-r border-[#dee2e7] text-xs">
-                <i class="ph ph-magnifying-glass"></i>Saved Searches
+                <i class="ph ph-magnifying-glass text-4xl"></i>Saved Searches
             </button>
             <button class="bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center border-r border-[#dee2e7] text-xs">
-                <i class="ph ph-gear"></i>Search Settings
+                <i class="ph ph-gear text-4xl"></i>Search Settings
             </button>
             <button class="bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center border-r border-[#dee2e7] text-xs">
-                <i class="ph ph-bookmark"></i>Save Current Search
+                <i class="ph ph-floppy-disk text-4xl"></i>Save Current Search
             </button>
             <button class="bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center border-r border-[#dee2e7] text-xs">
-                <i class="ph ph-bookmarks"></i>Save Search As
+                <i class="ph ph-bookmarks text-4xl"></i>Save Search As
             </button>
             <button class="bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center border-r border-[#dee2e7] text-xs">
-                <i class="ph ph-x"></i>Close
+                <i class="ph ph-x text-4xl"></i>Close
             </button>
             <button class="bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center text-xs">
-                <i class="ph ph-target"></i>Active Search
+                <i class="ph ph-target text-4xl"></i>Active Search
             </button>
         </header>
+
+        <!-- Search Bar -->
+        <div class="flex items-center h-[25px]">
+            <div class="bg-[#1c4490] w-[125px] h-full flex items-center justify-center text-white text-sm">▼</div>
+            <div class="bg-[#f8fcfd] flex-1">
+                <div class="text-sm text-gray-600 pl-2">Administration &gt; Overview</div>
+            </div>
+        </div>
 
         <div class="flex flex-1 overflow-hidden">
             <aside class="bg-[#e6edf3] w-64 p-4 overflow-y-auto h-full">
@@ -81,12 +81,14 @@
                     <div>All Insights</div>
                     <div>Operating System Deployment</div>
                 </div>
-                <div class="border-t border-b border-[#f2f6fc] mt-4 pt-2">
-                    <div class="text-xs">Assets and Compliance</div>
-                    <div class="text-xs">Software Library</div>
-                    <div class="text-xs">Monitoring</div>
-                    <div class="text-xs">Administration</div>
-                    <div class="text-xs">Community</div>
+
+                <!-- Bottom Left Menu -->
+                <div class="border-t border-[#f2f6fc] mt-4 pt-2">
+                    <div>Assets and Compliance</div>
+                    <div>Software Library</div>
+                    <div>Monitoring</div>
+                    <div class="bg-gray-200">Administration</div>
+                    <div>Community</div>
                 </div>
             </aside>
 
@@ -105,7 +107,7 @@
                         </div>
                     </div>
                 </section>
-                <div class="border border-[#f8fcfd] p-2 text-sm">• Recent Alerts (0) - Last updated: 4/28/2024 10:59:09 AM.</div>
+                <div class="border border-[#dee2e7] p-2 text-sm bg-[#f8fcfd]">• Recent Alerts (0) - Last updated: 4/28/2024 10:59:09 AM.</div>
             </main>
         </div>
     </div>
