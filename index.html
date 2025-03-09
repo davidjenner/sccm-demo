@@ -11,42 +11,58 @@
         body {
             font-family: 'Roboto', sans-serif;
         }
+        .tooltip {
+            position: absolute;
+            background-color: #1c4490;
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            white-space: nowrap;
+            display: none;
+        }
+        .nav-item:hover .tooltip {
+            display: block;
+        }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800">
     <div class="flex flex-col h-screen">
-        <!-- Windows Application Top Bar -->
         <div class="bg-white p-2 flex items-center justify-between border-b border-gray-300">
             <div class="text-sm">Microsoft Configuration Manager (Connected to DAJ, DAVID JENNER - DAJ-001)</div>
             <div class="text-sm">&#9633; &#9472; &#10005;</div>
         </div>
 
-        <!-- Header with Icons and Aligned Menu -->
         <header class="bg-transparent p-4 flex items-center space-x-2">
-            <button class="bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center border-r border-[#dee2e7] text-xs">
+            <button class="nav-item bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center border-r border-[#dee2e7] text-xs">
                 <i class="ph ph-files text-4xl"></i>All Objects
+                <span class="tooltip">View all managed objects</span>
             </button>
-            <button class="bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center border-r border-[#dee2e7] text-xs">
+            <button class="nav-item bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center border-r border-[#dee2e7] text-xs">
                 <i class="ph ph-magnifying-glass text-4xl"></i>Saved Searches
+                <span class="tooltip">Access your saved searches</span>
             </button>
-            <button class="bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center border-r border-[#dee2e7] text-xs">
+            <button class="nav-item bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center border-r border-[#dee2e7] text-xs">
                 <i class="ph ph-gear text-4xl"></i>Search Settings
+                <span class="tooltip">Manage search configurations</span>
             </button>
-            <button class="bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center border-r border-[#dee2e7] text-xs">
+            <button class="nav-item bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center border-r border-[#dee2e7] text-xs">
                 <i class="ph ph-floppy-disk text-4xl"></i>Save Current Search
+                <span class="tooltip">Save your current search parameters</span>
             </button>
-            <button class="bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center border-r border-[#dee2e7] text-xs">
+            <button class="nav-item bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center border-r border-[#dee2e7] text-xs">
                 <i class="ph ph-bookmarks text-4xl"></i>Save Search As
+                <span class="tooltip">Save search with custom name</span>
             </button>
-            <button class="bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center border-r border-[#dee2e7] text-xs">
+            <button class="nav-item bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center border-r border-[#dee2e7] text-xs">
                 <i class="ph ph-x text-4xl"></i>Close
+                <span class="tooltip">Close current window</span>
             </button>
-            <button class="bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center text-xs">
+            <button class="nav-item bg-transparent px-3 py-2 w-20 h-20 flex flex-col items-center text-xs">
                 <i class="ph ph-target text-4xl"></i>Active Search
+                <span class="tooltip">View active search settings</span>
             </button>
         </header>
 
-        <!-- Search Bar -->
         <div class="flex items-center h-[25px]">
             <div class="bg-[#1c4490] w-[125px] h-full flex items-center justify-center text-white text-sm">▼</div>
             <div class="bg-[#f8fcfd] flex-1">
@@ -82,7 +98,6 @@
                     <div>Operating System Deployment</div>
                 </div>
 
-                <!-- Bottom Left Menu -->
                 <div class="border-t border-[#f2f6fc] mt-4 pt-2">
                     <div>Assets and Compliance</div>
                     <div>Software Library</div>
